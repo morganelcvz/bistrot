@@ -6,18 +6,107 @@
     <title>Document</title>
     <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.css">
     <link rel="stylesheet" href="scss/style.css">
+    <script src="//pull.cappuccicons.com/cpf.js"></script>
+    <script src="https://kit.fontawesome.com/dd845416b8.js" crossorigin="anonymous"></script> 
 </head>
 <body>
     <header>
         <div class="header-bg">
             <div class="header-gradient">
-                <h1>Chariot</h1>
-                <h2>sous titre</h2>
+                <div class="header-right">
+                    <h1>Le Chariot</h1>
+                    <h2>Là où les saveurs d'antan rencontrent l'esprit bistrot d'aujourd'hui</h2>
+                </div>
+                <nav id="navbar-example2" class="navbar">
+                    <ul class="nav nav-pills">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading1">Notre Restaurant</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading2">Notre Menu</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading3">Nous contacter</a>
+                      </li>
+                    </ul>
+                  </nav>
             </div>
         </div>
-
     </header>
+<section class="introduction" id="scrollspyHeading1">
+    <div class="intro-img">
+        <div class="intro-gradient"></div>
+    </div>
+    <div class="intro-txt">
+        <p>
+            Le Chariot perpétue l’authenticité des bistrots d’antan avec une touche de modernité. Fondé par des passionnés de cuisine traditionnelle, le restaurant met à l'honneur les produits frais du marché et les recettes qui ont traversé les générations. Ici, chaque plat est une célébration de la simplicité savoureuse : des légumes croquants cultivés localement aux viandes de qualité, sélectionnées auprès d'artisans reconnus. La carte change au fil des saisons, garantissant une expérience gustative renouvelée où les saveurs se marient avec harmonie et créativité. L'ambiance de Le Chariot invite à la détente et à la convivialité. 
+            <br/>
+            Entre ses murs ornés d'affiches rétro et ses lumières tamisées, l'établissement propose une atmosphère chaleureuse, propice aux conversations animées ou aux moments plus intimes. Le doux parfum des plats mijotés flotte dans l'air, tandis que les rires et le tintement des verres rappellent que ce bistrot n'est pas seulement un lieu où l’on mange, mais un lieu où l’on se sent chez soi.
+        </p>
+    </div>
+</section>
+<section class="menu" id="scrollspyHeading2">
+    <h2>Notre Menu</h2>
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Les Entrées</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Les Plats</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Les Desserts</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active d-flex justify-content-around" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="card" style="width: 30rem;">
+                <img src="img/salade_1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <button type="button" class="btn btn-secondary">5€</button>
+                  <a href="#" class="btn btn-primary"><i class="fa-solid fa-circle-plus"></i> informations</a>
+                  <button type="button" class="btn btn-success">commander</button>
+                </div>
+              </div>
+              <div class="card" style="width: 30rem;">
+                <img src="img/salade_1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title 2</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <button type="button" class="btn btn-secondary">5€</button>
+                  <a href="#" class="btn btn-primary"><i class="fa-solid fa-circle-plus"></i> informations</a>
+                  <button type="button" class="btn btn-success">commander</button>
+                </div>
+              </div>
+              <div class="card" style="width: 30rem;">
+                <img src="img/salade_1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title 3</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <button type="button" class="btn btn-secondary">5€</button>
+                  <button type="button" class="btn btn-primary"><i class="fa-solid fa-circle-plus"></i> informations</button>
+                  <button type="button" class="btn btn-success">commander</button>
+                </div>
+              </div>
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            ...
+        </div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+            ...
+        </div>
+      </div>      
+</section>
+<footer>
+    <div class="contact-info">
 
+    </div>
+    <div class="website-map">
+
+    </div>
+</footer>
     <script src="node_modules\bootstrap\dist\js\bootstrap.js"></script>
 </body>
 </html>

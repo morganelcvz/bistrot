@@ -1,36 +1,139 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arimo:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 body {
-    padding:0px;
-    margin:0px;
+    padding: 0px;
+    margin: 0px;
 }
 
 header {
-    width:100%;
-    display:flex;
-    
+    width: 100%;
+    display: flex;
+
     .header-bg {
-        background:url(../img/cuisine.jpg);
-        background-size:100%;
+        background: url(../img/cuisine.jpg);
+        background-size: 100%;
         background-repeat: no-repeat;
-        width:100%;
-        height:600px;
+        background-position: center;
+        width: 100%;
+        height: 800px;
+        overflow: hidden;
 
         .header-gradient {
-            background:linear-gradient(-50deg, rgba(221,114,48, 1), rgba(231,227,147, 0.6));
-            width:100%;
-            height:600px;
-            text-align:right;
+            background: linear-gradient(-50deg, rgba(221, 114, 48, 1), rgba(231, 227, 147, 0.6));
+            width: 100%;
+            height: 800px;
 
-            h1 {
-                font-family: abril fatface;
-                font-weight:900;
+            .header-right {
+                width:35%;
+                text-align: left;
+                float:right;
+                padding-top:18rem;
+                margin-right:10rem;
+
+                h1 {
+                    font-family: abril fatface;
+                    font-size: 5rem;
+                    color: #fff;
+                }
+
+                h2 {
+                    font-family: playfair display;
+                    color: #fff;
+                    font-size: 1.8rem;
+                    font-weight:300;
+                }
             }
 
-            h2 {
-                font-family: playfair display;
+            .navbar {
+                float:right;
+                border:1px solid #fff;
+                margin:40rem 0rem 0rem 33rem;
+                
+
+                a {
+                    font-family: playfair display;
+                    color:#fff;
+                    font-weight:600;
+                    font-size:1.3rem;
+                    position:sticky;
+                }
+        
+                a:hover {
+                    color:#fff;
+                }
             }
         }
     }
 
 }
+
+
+
+    .introduction {
+        width:100%;
+        background:#dedede;
+        height:auto;
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        .intro-img {
+            background:url(../img/side.jpg);
+            background-size:100%;
+            background-repeat: no-repeat;
+            width:430px;
+            height:580px;
+            border:10px solid #fff;
+            margin:60px 20px;
+
+            .intro-gradient {
+                background: linear-gradient(0deg, rgba(238,214,120, 0.8), rgba(200,240,201, 0.6));
+                width:100%;
+                height:560px;
+            }
+        }
+
+        .intro-txt {
+            width:40%;
+
+            p {
+                padding:20px;
+                font-family: playfair display;
+            }
+        }
+    }
+
+    .menu {
+        width:100%;
+        background:#fff;
+        height:auto;
+        padding:60px 20px;
+
+        h2 {
+            font-family: abril fatface;
+            color:#e7e192;
+            font-size:2.5rem;
+            margin-left:5rem;
+            line-height:100%;
+            padding-bottom:2rem;
+        }
+
+        .nav-link {
+            margin-left:5rem;
+            font-family: playfair display;
+            font-size:1.5rem;
+            background:#fff;
+            color:#DD7230;
+
+            .active {
+                background:#000;
+            }
+        }
+    }
+
+    footer {
+        background: linear-gradient(90deg, rgba(221, 114, 48, 1), rgba(231, 227, 147, 1));
+            width: 100%;
+            height: 600px;
+    }
