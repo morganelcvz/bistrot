@@ -65,6 +65,7 @@ header .header-bg .header-gradient .header-right .navbar a:hover {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  gap: 5rem;
 }
 .introduction .intro-img {
   background: url(../img/side.jpg);
@@ -84,9 +85,14 @@ header .header-bg .header-gradient .header-right .navbar a:hover {
 .introduction .intro-txt {
   width: 40%;
 }
+.introduction .intro-txt h2 {
+  font-family: playfair display;
+  font-size: 2rem;
+  font-weight: 800;
+}
 .introduction .intro-txt p {
   padding: 20px;
-  font-family: playfair display;
+  font-family: arimo;
 }
 
 /**********MENU ONGLETS**********/
@@ -99,16 +105,11 @@ header .header-bg .header-gradient .header-right .navbar a:hover {
 }
 .menu h2 {
   font-family: abril fatface;
-  color: #e7e192;
+  color: #B4CA78;
   font-size: 2.5rem;
   margin-left: 5rem;
   line-height: 100%;
   padding-bottom: 2rem;
-}
-.menu #pills-home {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
 }
 .menu #pills-home-tab {
   background: #fff;
@@ -125,11 +126,6 @@ header .header-bg .header-gradient .header-right .navbar a:hover {
   background: #fff;
   color: #F4C95D;
 }
-.menu #pills-profile {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
 .menu #pills-profile-tab.active {
   padding: 0px;
   background: #fff;
@@ -139,11 +135,6 @@ header .header-bg .header-gradient .header-right .navbar a:hover {
   padding: 0px;
   background: #fff;
   color: #F4C95D;
-}
-.menu #pills-contact {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
 }
 .menu #pills-contact-tab.active {
   padding: 0px;
@@ -160,6 +151,7 @@ header .header-bg .header-gradient .header-right .navbar a:hover {
 }
 .menu .card {
   border-radius: 0px;
+  padding: 0px;
 }
 .menu .card p {
   font-family: arimo;
@@ -168,7 +160,8 @@ header .header-bg .header-gradient .header-right .navbar a:hover {
   border-radius: 0px;
 }
 .menu .card h5 {
-  font-family: abril fatface;
+  font-family: playfair display;
+  font-weight: 800;
   padding: 10px;
 }
 .menu .card .link-btn {
@@ -180,8 +173,8 @@ header .header-bg .header-gradient .header-right .navbar a:hover {
   border-radius: 0px;
   background: #fff;
   border: 0px;
-  font-family: abril fatface;
-  font-weight: bold;
+  font-family: playfair display;
+  font-weight: 800;
   color: #000;
   font-size: 1.2rem;
 }
@@ -210,12 +203,51 @@ header .header-bg .header-gradient .header-right .navbar a:hover {
   border: 0px;
 }
 .menu .card .modal-content .btn-primary {
-  background: #AFE1B1;
+  background: #B4CA78;
   color: #000;
 }
 
 footer {
-  background: linear-gradient(90deg, rgb(221, 114, 48), rgb(231, 227, 147));
+  background: url(../img/cuisine_2.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
   width: 100%;
-  height: 600px;
+  height: auto;
+}
+footer .local {
+  background: linear-gradient(90deg, rgb(221, 114, 48), rgba(231, 227, 147, 0.6));
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px 0px;
+}
+footer .website-map {
+  margin-top: 3rem;
+}
+footer .contact-info {
+  color: #fff;
+}
+footer .contact-info h3 {
+  font-family: playfair display;
+  color: #fff;
+  font-weight: 800;
+}
+footer .contact-info p {
+  font-family: arimo;
+  color: #fff;
+  padding: 10px;
+}
+footer .contact-info span {
+  padding: 8px;
+  background: rgba(221, 114, 48, 0.5);
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+footer .contact-info span a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0px 5px;
 }/*# sourceMappingURL=style.css.map */

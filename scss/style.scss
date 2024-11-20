@@ -70,8 +70,6 @@ header {
 
 }
 
-
-
     .introduction {
         width:100%;
         background:#dedede;
@@ -80,6 +78,7 @@ header {
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        gap:5rem;
 
         .intro-img {
             background:url(../img/side.jpg);
@@ -100,10 +99,16 @@ header {
 
         .intro-txt {
             width:40%;
+            
+            h2 {
+                font-family: playfair display;
+                font-size:2rem;
+                font-weight:800;
+            }
 
             p {
                 padding:20px;
-                font-family: playfair display;
+                font-family: arimo;
             }
         }
     }
@@ -118,17 +123,11 @@ header {
 
         h2 {
             font-family: abril fatface;
-            color:#e7e192;
+            color:#B4CA78;
             font-size:2.5rem;
             margin-left:5rem;
             line-height:100%;
             padding-bottom:2rem;
-        }
-
-        #pills-home {
-            display:flex;
-            flex-direction: row;
-            justify-content: space-around;
         }
 
         #pills-home-tab {
@@ -149,12 +148,6 @@ header {
             color:#F4C95D;
         }
 
-        #pills-profile {
-            display:flex;
-            flex-direction: row;
-            justify-content: space-around;
-        }
-
         #pills-profile-tab.active {
             padding:0px;
             background:#fff;
@@ -165,12 +158,6 @@ header {
             padding:0px;
             background:#fff;
             color:#F4C95D;
-        }
-
-        #pills-contact {
-            display:flex;
-            flex-direction: row;
-            justify-content: space-around;
         }
 
         #pills-contact-tab.active {
@@ -193,6 +180,7 @@ header {
 
         .card {
             border-radius:0px;
+            padding:0px;
 
             p {
                 font-family: arimo;
@@ -203,7 +191,8 @@ header {
             }
 
             h5 {
-                font-family: abril fatface;
+                font-family: playfair display;
+                font-weight:800;
                 padding:10px;
             }
 
@@ -218,8 +207,8 @@ header {
                     border-radius:0px;
                     background:#fff;
                     border:0px;
-                    font-family: abril fatface;
-                    font-weight:bold;
+                    font-family: playfair display;
+                    font-weight:800;
                     color:#000;
                     font-size:1.2rem;
                 }
@@ -259,7 +248,7 @@ header {
                 }
 
                 .btn-primary {
-                    background:#AFE1B1;
+                    background:#B4CA78;
                     color:#000;
                 }
             }
@@ -268,7 +257,55 @@ header {
     }
 
     footer {
-        background: linear-gradient(90deg, rgba(221, 114, 48, 1), rgba(231, 227, 147, 1));
+        background:url(../img/cuisine_2.jpg);
+        background-size:100%;
+        background-repeat: no-repeat;
+        background-position:center;
             width: 100%;
-            height: 600px;
+            height: auto;
+            
+            .local {
+                background:linear-gradient(90deg, rgba(221, 114, 48, 1), rgba(231, 227, 147, 0.6));
+                display:flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                padding:20px 0px;
+            }
+
+            .website-map {
+                margin-top:3rem;
+            }
+
+            .contact-info {
+                color:#fff;
+
+                h3 {
+                    font-family: playfair display;
+                    color:#fff;
+                    font-weight:800;
+                }
+                
+                p {
+                    font-family: arimo;
+                    color:#fff;
+                    padding:10px;
+                }
+
+                span {
+                    padding:8px;
+                    background:rgba(221, 114, 48, 0.5);
+                    display:flex;
+                    justify-content: center;
+                    box-sizing: border-box;
+    
+                    a {
+                        color:#fff;
+                        text-decoration:none;
+                        padding:0px 5px;
+                    }
+                }
+            }
+
+            
     }
