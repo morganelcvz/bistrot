@@ -15,7 +15,6 @@ header .header-bg {
   background-position: center;
   width: 100%;
   height: 800px;
-  overflow: hidden;
 }
 header .header-bg .header-gradient {
   background: linear-gradient(-50deg, rgb(221, 114, 48), rgba(231, 227, 147, 0.6));
@@ -28,6 +27,7 @@ header .header-bg .header-gradient .header-right {
   float: right;
   padding-top: 18rem;
   margin-right: 10rem;
+  /*******NAVBAR TOP******/
 }
 header .header-bg .header-gradient .header-right h1 {
   font-family: abril fatface;
@@ -40,19 +40,20 @@ header .header-bg .header-gradient .header-right h2 {
   font-size: 1.8rem;
   font-weight: 300;
 }
-header .header-bg .header-gradient .navbar {
-  float: right;
-  border: 1px solid #fff;
-  margin: 40rem 0rem 0rem 33rem;
+header .header-bg .header-gradient .header-right .navbar {
+  width: 100%;
+  margin-top: 10rem;
+  top: 0;
+  position: sticky;
 }
-header .header-bg .header-gradient .navbar a {
+header .header-bg .header-gradient .header-right .navbar a {
   font-family: playfair display;
   color: #fff;
   font-weight: 600;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   position: sticky;
 }
-header .header-bg .header-gradient .navbar a:hover {
+header .header-bg .header-gradient .header-right .navbar a:hover {
   color: #fff;
 }
 
@@ -69,15 +70,16 @@ header .header-bg .header-gradient .navbar a:hover {
   background: url(../img/side.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
+  background-position: center;
   width: 430px;
-  height: 580px;
+  height: 450px;
   border: 10px solid #fff;
   margin: 60px 20px;
 }
 .introduction .intro-img .intro-gradient {
   background: linear-gradient(0deg, rgba(238, 214, 120, 0.8), rgba(200, 240, 201, 0.6));
   width: 100%;
-  height: 560px;
+  height: 430px;
 }
 .introduction .intro-txt {
   width: 40%;
@@ -87,11 +89,13 @@ header .header-bg .header-gradient .navbar a:hover {
   font-family: playfair display;
 }
 
+/**********MENU ONGLETS**********/
 .menu {
   width: 100%;
   background: #fff;
   height: auto;
   padding: 60px 20px;
+  /********LES PLATS*******/
 }
 .menu h2 {
   font-family: abril fatface;
@@ -101,15 +105,113 @@ header .header-bg .header-gradient .navbar a:hover {
   line-height: 100%;
   padding-bottom: 2rem;
 }
+.menu #pills-home {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.menu #pills-home-tab {
+  background: #fff;
+  color: #F4C95D;
+  padding: 0px;
+}
+.menu #pills-home-tab.active {
+  background: #fff;
+  color: #DD7230;
+  padding: 0px;
+}
+.menu #pills-profile-tab {
+  padding: 0px;
+  background: #fff;
+  color: #F4C95D;
+}
+.menu #pills-profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.menu #pills-profile-tab.active {
+  padding: 0px;
+  background: #fff;
+  color: #DD7230;
+}
+.menu #pills-contact-tab {
+  padding: 0px;
+  background: #fff;
+  color: #F4C95D;
+}
+.menu #pills-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.menu #pills-contact-tab.active {
+  padding: 0px;
+  background: #fff;
+  color: #DD7230;
+}
 .menu .nav-link {
   margin-left: 5rem;
   font-family: playfair display;
+  font-weight: 600;
   font-size: 1.5rem;
   background: #fff;
   color: #DD7230;
 }
-.menu .nav-link .active {
-  background: #000;
+.menu .card {
+  border-radius: 0px;
+}
+.menu .card p {
+  font-family: arimo;
+}
+.menu .card img {
+  border-radius: 0px;
+}
+.menu .card h5 {
+  font-family: abril fatface;
+  padding: 10px;
+}
+.menu .card .link-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu .card .price button {
+  border-radius: 0px;
+  background: #fff;
+  border: 0px;
+  font-family: abril fatface;
+  font-weight: bold;
+  color: #000;
+  font-size: 1.2rem;
+}
+.menu .card .info-cmd .btn-primary {
+  border-radius: 0px;
+  font-family: playfair display;
+  border: 0px;
+  background: #F4C95D;
+}
+.menu .card .info-cmd .btn-success {
+  border-radius: 0px;
+  font-family: playfair display;
+  background: #DD7230;
+  border: 0px;
+}
+.menu .card .modal-content h1 {
+  font-family: playfair display;
+  font-weight: 600;
+}
+.menu .card .modal-content .modal-body {
+  font-family: playfair display;
+}
+.menu .card .modal-content .btn-secondary {
+  border-radius: 0px;
+  font-family: playfair display;
+  border: 0px;
+}
+.menu .card .modal-content .btn-primary {
+  background: #AFE1B1;
+  color: #000;
 }
 
 footer {
