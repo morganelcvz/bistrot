@@ -9,7 +9,7 @@ header {
     width: 100%;
     display: flex;
 
-    .header-bg {
+    .header-bg { 
         background: url(../img/cuisine.jpg);
         background-size: cover;
         background-attachment: fixed;
@@ -24,11 +24,7 @@ header {
             height: 800px;
 
             .header-right {
-                width: 35%;
-                text-align: left;
-                float: right;
-                padding-top: 18rem;
-                margin-right: 10rem;
+
 
                 h1 {
                     font-family: abril fatface;
@@ -51,18 +47,28 @@ header {
 
 /*******NAVBAR TOP******/
 
-.navbar.sticky-bg {
-    background-color: #3498db;
-    transition: background-color 0.3s ease;
-}
-
 .navbar {
-    width: 100%;
     background: linear-gradient(-50deg, rgba(221, 114, 48, 1), rgba(231, 227, 147, 0.6));
     text-align: right;
-    display: flex;
-    justify-content: flex-end;
     margin-top:-4.1rem;
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    @media (max-width:640px) {
+        display:flex;
+        flex-direction: column;
+        margin-top:0rem;
+    }
+
+    .nav-pills {
+
+        @media (max-width:640px) {
+            display:flex;
+            flex-direction: column;
+        }
+    }
 
     a {
         font-family: playfair display;
@@ -70,7 +76,6 @@ header {
         font-weight: 600;
         font-size: 1.4rem;
         text-align: right;
-        margin-right: 5.8rem;
     }
 
     a:hover {
@@ -84,32 +89,26 @@ header {
     width: 100%;
     background: #dedede;
     height: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 5rem;
+    padding:0px;
+    margin:0px;
 
     .intro-img {
         background: url(../img/side.jpg);
-        background-size: 100%;
+        background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        width: 430px;
         height: 450px;
         border: 10px solid #fff;
-        margin: 80px 20px;
+        padding:0px;
 
         .intro-gradient {
             background: linear-gradient(0deg, rgba(238, 214, 120, 0.8), rgba(200, 240, 201, 0.6));
-            width: 100%;
-            height: 430px;
+            width:100%;
+            height:27rem;
         }
     }
 
     .intro-txt {
-        width: 40%;
 
         h2 {
             font-family: playfair display;
@@ -136,7 +135,6 @@ header {
         font-family: abril fatface;
         color: #B4CA78;
         font-size: 2.5rem;
-        margin-left: 5rem;
         line-height: 100%;
         padding-bottom: 2rem;
     }
@@ -178,7 +176,6 @@ header {
     }
 
     .nav-link {
-        margin-left: 5rem;
         font-family: playfair display;
         font-weight: 600;
         font-size: 1.5rem;
@@ -270,19 +267,15 @@ header {
 
 footer {
     background: url(../img/cuisine_2.jpg);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 100%;
     height: auto;
+    padding:0px;
+    margin:0px;
 
     .local {
         background: linear-gradient(90deg, rgba(221, 114, 48, 1), rgba(231, 227, 147, 0.6));
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        padding: 20px 0px;
     }
 
     .website-map {
@@ -301,15 +294,15 @@ footer {
         p {
             font-family: arimo;
             color: #fff;
-            padding: 10px;
         }
 
         span {
             padding: 8px;
             background: rgba(221, 114, 48, 0.5);
-            display: flex;
-            justify-content: center;
-            box-sizing: border-box;
+
+            @media (max-width:640px) {
+                font-size:0.7rem;
+            }
 
             a {
                 color: #fff;

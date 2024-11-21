@@ -14,8 +14,8 @@
 <body>
   <header>
     <div class="header-bg">
-      <div class="header-gradient">
-        <div class="header-right">
+      <div class="header-gradient row justify-content-end align-items-center p-0 m-0">
+        <div class="header-right m-5 col-lg-5 col-sm-10 col-10">
           <h1><i class="cp cp-chef-hat-o"></i> Le Chariot</h1>
           <h2>Là où les saveurs d'antan rencontrent l'esprit bistrot d'aujourd'hui</h2>
         </div>
@@ -23,23 +23,23 @@
     </div>
   </header>
   <nav id="navbar-example2" class="navbar sticky-top">
-    <ul class="nav nav-pills">
+    <ul class="nav nav-pills col-lg-6 col-10">
       <li class="nav-item">
-        <a class="nav-link" href="#scrollspyHeading1">Notre Restaurant</a>
+        <a class="nav-link ps-lg-5" href="#scrollspyHeading1">Notre Restaurant</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#scrollspyHeading2">Notre Menu</a>
+        <a class="nav-link ps-lg-5" href="#scrollspyHeading2">Notre Menu</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#scrollspyHeading3">Nous coordonnées</a>
+        <a class="nav-link ps-lg-5" href="#scrollspyHeading3">Nous coordonnées</a>
       </li>
     </ul>
   </nav>
-  <section class="introduction" id="scrollspyHeading1">
-    <div class="intro-img">
+  <section class="introduction container-fluid row justify-content-center align-items-center" id="scrollspyHeading1">
+    <div class="intro-img col-lg-3 col-sm-8 m-lg-5">
       <div class="intro-gradient"></div>
     </div>
-    <div class="intro-txt">
+    <div class="intro-txt col-lg-5 p-lg-0 px-sm-5">
       <p>
       <h2>Un restaurant, mais pas seulement...</h2>
       <br />
@@ -58,19 +58,22 @@
     </div>
   </section>
   <section class="menu" id="scrollspyHeading2">
-    <h2><i class="cp cp-cutlery-o"></i> Notre Menu</h2>
+    <h2 class="ps-lg-5 ps-lg-0"><i class="cp cp-cutlery-o"></i> Notre Menu</h2>
     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-      <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
-          type="button" role="tab" aria-controls="pills-home" aria-selected="true">Les Entrées</button>
+      <li class="nav-item col-lg-2 col-sm-8 col-12" role="presentation">
+        <button class="nav-link active mx-lg-5 mx-sm-5" id="pills-home-tab" data-bs-toggle="pill"
+          data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Les
+          Entrées</button>
       </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
-          type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Les Plats</button>
+      <li class="nav-item col-lg-2 col-sm-8 col-12" role="presentation">
+        <button class="nav-link mx-lg-5 mx-sm-5" id="pills-profile-tab" data-bs-toggle="pill"
+          data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+          aria-selected="false">Les Plats</button>
       </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
-          type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Les Desserts</button>
+      <li class="nav-item col-lg-2 col-sm-8 col-12" role="presentation">
+        <button class="nav-link mx-lg-5 mx-sm-5" id="pills-contact-tab" data-bs-toggle="pill"
+          data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+          aria-selected="false">Les Desserts</button>
       </li>
     </ul>
     <!-- début onglet -->
@@ -79,7 +82,7 @@
       <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
         tabindex="0">
         <div class="row justify-content-around flex-wrap" id="mycard">
-          <div class="card col-3">
+          <div class="card col-lg-3 col-sm-10 mt-3">
             <h5 class="card-title">Quiche lorraine</h5>
             <img src="img/quiche_lorraine.jpg" class="card-img-top" alt="Quiche lorraine">
             <div class="card-body">
@@ -90,7 +93,8 @@
                 </div>
                 <div class="info-cmd">
                   <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top"
-                    data-bs-title="option végératien : champignons"><i class="fa-solid fa-circle-plus"></i> informations</button>
+                    data-bs-title="option végératien : champignons"><i class="fa-solid fa-circle-plus"></i>
+                    informations</button>
                   <button type="button" class="btn btn-success" data-bs-toggle="modal"
                     data-bs-target="#modal-quiche">commander</button>
                   <div class="modal fade" id="modal-quiche" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -115,7 +119,7 @@
               </div>
             </div>
           </div>
-          <div class="card col-3">
+          <div class="card col-lg-3 col-sm-10 mt-3">
             <h5 class="card-title">Salade composée</h5>
             <img src="img/salade_1.png" class="card-img-top" alt="Salade composée">
             <div class="card-body">
@@ -152,7 +156,7 @@
               </div>
             </div>
           </div>
-          <div class="card col-3">
+          <div class="card col-lg-3 col-sm-10 mt-3">
             <h5 class="card-title">Tarte épicée</h5>
             <img src="img/tarte_piquant_quiche.jpg" class="card-img-top" alt="Tarte épicée">
             <div class="card-body">
@@ -196,7 +200,7 @@
       <!-- tab -->
       <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
         <div class="row justify-content-around flex-wrap">
-          <div class="card col-3">
+          <div class="card col-lg-3 col-sm-10 mt-3">
             <h5 class="card-title">Entrecôte bordelaise</h5>
             <img src="img/entrecote-bordelaise.jpg" class="card-img-top" alt="entrecôte bordelaise">
             <div class="card-body">
@@ -233,7 +237,7 @@
               </div>
             </div>
           </div>
-          <div class="card col-3">
+          <div class="card col-lg-3 col-sm-10 mt-3">
             <h5 class="card-title">Pot-au-feu</h5>
             <img src="img/pot_au_feu.jpg" class="card-img-top" alt="Pot-au-feu">
             <div class="card-body">
@@ -270,7 +274,7 @@
               </div>
             </div>
           </div>
-          <div class="card col-3">
+          <div class="card col-lg-3 col-sm-10 mt-3">
             <h5 class="card-title">Filet de bar</h5>
             <img src="img/filet_bar.jpeg" class="card-img-top" alt="Filet de bar">
             <div class="card-body">
@@ -314,11 +318,12 @@
       <!-- tab -->
       <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
         <div class="row justify-content-around flex-wrap">
-          <div class="card col-3">
+          <div class="card col-lg-3 col-sm-10 mt-3">
             <h5 class="card-title">Tarte tatin</h5>
             <img src="img/tarte_tatin.jpg" class="card-img-top" alt="Tarte tatin">
             <div class="card-body">
-              <p class="card-text">Bananes caramélisées fondantes sur une pâte dorée, avec une touche de crème fraîche.</p>
+              <p class="card-text">Bananes caramélisées fondantes sur une pâte dorée, avec une touche de crème fraîche.
+              </p>
               <div class="link-btn">
                 <div class="price">
                   <button type="button" class="btn btn-secondary">8.5€</button>
@@ -351,11 +356,12 @@
               </div>
             </div>
           </div>
-          <div class="card col-3">
+          <div class="card col-lg-3 col-sm-10 mt-3">
             <h5 class="card-title">Crème brûlée</h5>
             <img src="img/creme_brulee.jpg" class="card-img-top" alt="Crème brûlée">
             <div class="card-body">
-              <p class="card-text">L'incontournable à la vanille, avec sa croûte caramélisée à casser du bout de la cuillère.</p>
+              <p class="card-text">L'incontournable à la vanille, avec sa croûte caramélisée à casser du bout de la
+                cuillère.</p>
               <div class="link-btn">
                 <div class="price">
                   <button type="button" class="btn btn-secondary">6.5€</button>
@@ -388,7 +394,7 @@
               </div>
             </div>
           </div>
-          <div class="card col-3">
+          <div class="card col-lg-3 col-sm-10 mt-3">
             <h5 class="card-title">Clafoutis</h5>
             <img src="img/clafoutis.jpg" class="card-img-top" alt="Clafoutis">
             <div class="card-body">
@@ -431,36 +437,40 @@
     </div>
     <!-- fin des onglets -->
   </section>
-  <footer id="scrollspyHeading3">
-    <div class="local">
-      <div class="contact-info">
-        <p>
-        <h3><i class="cp cp-home-o"></i> Notre adresse</h3>
-        15, Rue des Vignes Fleuries
-        <br />
-        75011 Paris, France
-        </p>
-        <p>
-        <h3><i class="cp cp-phone-alt-o"></i> Nos Coordonnées</h3>
-        <b>01 42 78 35 90</b>
-        <br />
-        contact@lechariot-bistro.fr
-        </p>
-        <p>
-        <h3><i class="cp cp-clock-o"></i> Nos horraires</h3>
-        <b>Mardi, Jeudi, Mercredi :</b> 12h - 15h / 19h - 22h
-        <br />
-        <b>Vendredi :</b> 19h - 22h
-        <br />
-        <b>Samedi :</b> 19h - 22h
-        </p>
-        <span><a href="">mention légales</a> | 2024 © Morgane Le Calvez AFPA DWWM</span>
-      </div>
-      <div class="website-map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5180.907853259245!2d0.16688697620099915!3d49.51370545436782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e02fe40985f1ff%3A0x89e1a03a20457b7b!2sAfpa%20-%20Centre%20du%20Havre!5e0!3m2!1sfr!2sfr!4v1732107536318!5m2!1sfr!2sfr"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <footer id="scrollspyHeading3" class="container-fluid m-0 p-0">
+    <div class="local container-fluid m-0 p-0">
+      <div class="row justify-content-around m-0 p-0">
+        <div class="contact-info col-lg-4 col-sm-10 col-10">
+          <p class="py-lg-2 py-sm-2">
+          <h3><i class="cp cp-home-o"></i> Notre adresse</h3>
+          15, Rue des Vignes Fleuries
+          <br />
+          75011 Paris, France
+          </p>
+          <p class="p-lg-3 py-sm-3">
+          <h3><i class="cp cp-phone-alt-o"></i> Nos Coordonnées</h3>
+          <b>01 42 78 35 90</b>
+          <br />
+          contact@lechariot-bistro.fr
+          </p>
+          <p class="p-lg-3 py-sm-3">
+          <h3><i class="cp cp-clock-o"></i> Nos horraires</h3>
+          <b>Mardi, Jeudi, Mercredi :</b> 12h - 15h / 19h - 22h
+          <br />
+          <b>Vendredi :</b> 19h - 22h
+          <br />
+          <b>Samedi :</b> 19h - 22h
+          </p>
+          <p class="py-lg-3 py-sm-3">
+          <span><a href="">mention légales</a> | 2024 © Morgane Le Calvez AFPA DWWM</span>
+          </p>
+        </div>
+        <div class="website-map col-lg-7 p-lg-0 pb-sm-4 pb-4 row justify-content-center">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5180.907853259245!2d0.16688697620099915!3d49.51370545436782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e02fe40985f1ff%3A0x89e1a03a20457b7b!2sAfpa%20-%20Centre%20du%20Havre!5e0!3m2!1sfr!2sfr!4v1732107536318!5m2!1sfr!2sfr"
+            class="col-lg-9" style="border:0;" height="450" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
       </div>
     </div>
   </footer>
