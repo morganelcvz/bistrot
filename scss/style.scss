@@ -11,7 +11,8 @@ header {
 
     .header-bg {
         background: url(../img/cuisine.jpg);
-        background-size: 100%;
+        background-size: cover;
+        background-attachment: fixed;
         background-repeat: no-repeat;
         background-position: center;
         width: 100%;
@@ -23,11 +24,11 @@ header {
             height: 800px;
 
             .header-right {
-                width:35%;
+                width: 35%;
                 text-align: left;
-                float:right;
-                padding-top:18rem;
-                margin-right:10rem;
+                float: right;
+                padding-top: 18rem;
+                margin-right: 10rem;
 
                 h1 {
                     font-family: abril fatface;
@@ -39,29 +40,7 @@ header {
                     font-family: playfair display;
                     color: #fff;
                     font-size: 1.8rem;
-                    font-weight:300;
-                }
-
-                /*******NAVBAR TOP******/
-
-                .navbar {
-                    width:100%;
-                    margin-top:10rem;
-                    top:0;
-                    position:sticky;
-                    
-    
-                    a {
-                        font-family: playfair display;
-                        color:#fff;
-                        font-weight:600;
-                        font-size:1.4rem;
-                        position:sticky;
-                    }
-            
-                    a:hover {
-                        color:#fff;
-                    }
+                    font-weight: 300;
                 }
             }
 
@@ -70,242 +49,275 @@ header {
 
 }
 
-    .introduction {
-        width:100%;
-        background:#dedede;
-        height:auto;
-        display:flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap:5rem;
+/*******NAVBAR TOP******/
 
-        .intro-img {
-            background:url(../img/side.jpg);
-            background-size:100%;
-            background-repeat: no-repeat;
-            background-position: center;
-            width:430px;
-            height:450px;
-            border:10px solid #fff;
-            margin:60px 20px;
+.navbar.sticky-bg {
+    background-color: #3498db;
+    transition: background-color 0.3s ease;
+}
 
-            .intro-gradient {
-                background: linear-gradient(0deg, rgba(238,214,120, 0.8), rgba(200,240,201, 0.6));
-                width:100%;
-                height:430px;
-            }
-        }
+.navbar {
+    width: 100%;
+    background: linear-gradient(-50deg, rgba(221, 114, 48, 1), rgba(231, 227, 147, 0.6));
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    margin-top:-4.1rem;
 
-        .intro-txt {
-            width:40%;
-            
-            h2 {
-                font-family: playfair display;
-                font-size:2rem;
-                font-weight:800;
-            }
+    a {
+        font-family: playfair display;
+        color: #fff;
+        font-weight: 600;
+        font-size: 1.4rem;
+        text-align: right;
+        margin-right: 5.8rem;
+    }
 
-            p {
-                padding:20px;
-                font-family: arimo;
-            }
+    a:hover {
+        color: #fff;
+    }
+}
+
+/*********Présentation du Restaurant**********/
+
+.introduction {
+    width: 100%;
+    background: #dedede;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+
+    .intro-img {
+        background: url(../img/side.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 430px;
+        height: 450px;
+        border: 10px solid #fff;
+        margin: 80px 20px;
+
+        .intro-gradient {
+            background: linear-gradient(0deg, rgba(238, 214, 120, 0.8), rgba(200, 240, 201, 0.6));
+            width: 100%;
+            height: 430px;
         }
     }
 
-    /**********MENU ONGLETS**********/
-
-    .menu {
-        width:100%;
-        background:#fff;
-        height:auto;
-        padding:60px 20px;
+    .intro-txt {
+        width: 40%;
 
         h2 {
-            font-family: abril fatface;
-            color:#B4CA78;
-            font-size:2.5rem;
-            margin-left:5rem;
-            line-height:100%;
-            padding-bottom:2rem;
-        }
-
-        #pills-home-tab {
-            background:#fff;
-            color:#F4C95D;
-            padding:0px;
-        }
-
-        #pills-home-tab.active {
-            background:#fff;
-            color:#DD7230;
-            padding:0px;
-        }
-        
-        #pills-profile-tab {
-            padding:0px;
-            background:#fff;
-            color:#F4C95D;
-        }
-
-        #pills-profile-tab.active {
-            padding:0px;
-            background:#fff;
-            color:#DD7230;
-        }
-
-        #pills-contact-tab {
-            padding:0px;
-            background:#fff;
-            color:#F4C95D;
-        }
-
-        #pills-contact-tab.active {
-            padding:0px;
-            background:#fff;
-            color:#DD7230;
-        }
-
-        .nav-link {
-            margin-left:5rem;
             font-family: playfair display;
-            font-weight:600;
-            font-size:1.5rem;
-            background:#fff;
-            color:#DD7230;
+            font-size: 2rem;
+            font-weight: 800;
         }
-        
 
-        /********LES PLATS*******/
+        p {
+            padding: 20px;
+            font-family: arimo;
+        }
+    }
+}
 
-        .card {
-            border-radius:0px;
-            padding:0px;
+/**********MENU ONGLETS**********/
 
-            p {
-                font-family: arimo;
-            }
+.menu {
+    width: 100%;
+    background: #fff;
+    height: auto;
+    padding: 60px 20px;
 
-            img {
+    h2 {
+        font-family: abril fatface;
+        color: #B4CA78;
+        font-size: 2.5rem;
+        margin-left: 5rem;
+        line-height: 100%;
+        padding-bottom: 2rem;
+    }
+
+    #pills-home-tab {
+        background: #fff;
+        color: #F4C95D;
+        padding: 0px;
+    }
+
+    #pills-home-tab.active {
+        background: #fff;
+        color: #DD7230;
+        padding: 0px;
+    }
+
+    #pills-profile-tab {
+        padding: 0px;
+        background: #fff;
+        color: #F4C95D;
+    }
+
+    #pills-profile-tab.active {
+        padding: 0px;
+        background: #fff;
+        color: #DD7230;
+    }
+
+    #pills-contact-tab {
+        padding: 0px;
+        background: #fff;
+        color: #F4C95D;
+    }
+
+    #pills-contact-tab.active {
+        padding: 0px;
+        background: #fff;
+        color: #DD7230;
+    }
+
+    .nav-link {
+        margin-left: 5rem;
+        font-family: playfair display;
+        font-weight: 600;
+        font-size: 1.5rem;
+        background: #fff;
+        color: #DD7230;
+    }
+
+
+    /********LES PLATS*******/
+
+    .card {
+        border-radius: 0px;
+        padding: 0px;
+
+        p {
+            font-family: arimo;
+        }
+
+        img {
+            border-radius: 0px;
+        }
+
+        h5 {
+            font-family: playfair display;
+            font-weight: 800;
+            padding: 10px;
+        }
+
+        .link-btn {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .price {
+            button {
                 border-radius: 0px;
-            }
-
-            h5 {
+                background: #fff;
+                border: 0px;
                 font-family: playfair display;
-                font-weight:800;
-                padding:10px;
+                font-weight: 800;
+                color: #000;
+                font-size: 1.2rem;
+            }
+        }
+
+        .info-cmd {
+            .btn-primary {
+                border-radius: 0px;
+                font-family: playfair display;
+                border: 0px;
+                background: #F4C95D;
             }
 
-            .link-btn {
-                display:flex;
-                flex-direction: row;
-                justify-content: space-between;
+            .btn-success {
+                border-radius: 0px;
+                font-family: playfair display;
+                background: #DD7230;
+                border: 0px;
+            }
+        }
+
+        .modal-content {
+            border-radius:0px;
+
+            h1 {
+                font-family: playfair display;
+                font-weight: 600;
             }
 
-            .price {
-                button {
-                    border-radius:0px;
-                    background:#fff;
-                    border:0px;
-                    font-family: playfair display;
-                    font-weight:800;
-                    color:#000;
-                    font-size:1.2rem;
-                }
+            .modal-body {
+                font-family: playfair display;
             }
 
-            .info-cmd {
-                .btn-primary {
-                    border-radius:0px;
-                    font-family: playfair display;
-                    border:0px;
-                    background:#F4C95D;
-                }
-
-                .btn-success {
-                    border-radius:0px;
-                    font-family: playfair display;
-                    background:#DD7230;
-                    border:0px;
-                }
+            .btn-secondary {
+                border-radius: 0px;
+                font-family: playfair display;
+                border: 0px;
             }
 
-            .modal-content {
-
-                h1 {
-                    font-family: playfair display;
-                    font-weight:600;
-                }
-
-                .modal-body {
-                    font-family: playfair display;
-                }
-
-                .btn-secondary {
-                    border-radius:0px;
-                    font-family: playfair display;
-                    border:0px;
-                }
-
-                .btn-primary {
-                    background:#B4CA78;
-                    color:#000;
-                }
+            .btn-primary {
+                background: #B4CA78;
+                color: #000;
             }
-            
+        }
+
+    }
+}
+
+footer {
+    background: url(../img/cuisine_2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: auto;
+
+    .local {
+        background: linear-gradient(90deg, rgba(221, 114, 48, 1), rgba(231, 227, 147, 0.6));
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px 0px;
+    }
+
+    .website-map {
+        margin-top: 3rem;
+    }
+
+    .contact-info {
+        color: #fff;
+
+        h3 {
+            font-family: playfair display;
+            color: #fff;
+            font-weight: 800;
+        }
+
+        p {
+            font-family: arimo;
+            color: #fff;
+            padding: 10px;
+        }
+
+        span {
+            padding: 8px;
+            background: rgba(221, 114, 48, 0.5);
+            display: flex;
+            justify-content: center;
+            box-sizing: border-box;
+
+            a {
+                color: #fff;
+                text-decoration: none;
+                padding: 0px 5px;
+            }
         }
     }
 
-    footer {
-        background:url(../img/cuisine_2.jpg);
-        background-size:100%;
-        background-repeat: no-repeat;
-        background-position:center;
-            width: 100%;
-            height: auto;
-            
-            .local {
-                background:linear-gradient(90deg, rgba(221, 114, 48, 1), rgba(231, 227, 147, 0.6));
-                display:flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: space-around;
-                padding:20px 0px;
-            }
 
-            .website-map {
-                margin-top:3rem;
-            }
-
-            .contact-info {
-                color:#fff;
-
-                h3 {
-                    font-family: playfair display;
-                    color:#fff;
-                    font-weight:800;
-                }
-                
-                p {
-                    font-family: arimo;
-                    color:#fff;
-                    padding:10px;
-                }
-
-                span {
-                    padding:8px;
-                    background:rgba(221, 114, 48, 0.5);
-                    display:flex;
-                    justify-content: center;
-                    box-sizing: border-box;
-    
-                    a {
-                        color:#fff;
-                        text-decoration:none;
-                        padding:0px 5px;
-                    }
-                }
-            }
-
-            
-    }
+}

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Le Chariot</title>
   <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.css">
   <link rel="stylesheet" href="scss/style.css">
   <script src="//pull.cappuccicons.com/cpf.js"></script>
@@ -16,25 +16,25 @@
     <div class="header-bg">
       <div class="header-gradient">
         <div class="header-right">
-          <h1>Le Chariot</h1>
+          <h1><i class="cp cp-chef-hat-o"></i> Le Chariot</h1>
           <h2>Là où les saveurs d'antan rencontrent l'esprit bistrot d'aujourd'hui</h2>
-          <nav id="navbar-example2" class="navbar">
-            <ul class="nav nav-pills">
-              <li class="nav-item">
-                <a class="nav-link" href="#scrollspyHeading1">Notre Restaurant</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#scrollspyHeading2">Notre Menu</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#scrollspyHeading3">Nous contacter</a>
-              </li>
-            </ul>
-          </nav>
         </div>
       </div>
     </div>
   </header>
+  <nav id="navbar-example2" class="navbar sticky-top">
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading1">Notre Restaurant</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading2">Notre Menu</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading3">Nous coordonnées</a>
+      </li>
+    </ul>
+  </nav>
   <section class="introduction" id="scrollspyHeading1">
     <div class="intro-img">
       <div class="intro-gradient"></div>
@@ -78,21 +78,19 @@
       <!-- tab -->
       <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
         tabindex="0">
-        <div class="row justify-content-around">
+        <div class="row justify-content-around flex-wrap" id="mycard">
           <div class="card col-3">
             <h5 class="card-title">Quiche lorraine</h5>
             <img src="img/quiche_lorraine.jpg" class="card-img-top" alt="Quiche lorraine">
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
+              <p class="card-text">La classique aux lardons fumés et à la crème onctueuse, servie tiède.</p>
               <div class="link-btn">
                 <div class="price">
-                  <button type="button" class="btn btn-secondary">5€</button>
+                  <button type="button" class="btn btn-secondary">12€</button>
                 </div>
                 <div class="info-cmd">
                   <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top"
-                    data-bs-title="ingrédients"><i class="fa-solid fa-circle-plus"></i>
-                    informations</button>
+                    data-bs-title="option végératien : champignons"><i class="fa-solid fa-circle-plus"></i> informations</button>
                   <button type="button" class="btn btn-success" data-bs-toggle="modal"
                     data-bs-target="#modal-quiche">commander</button>
                   <div class="modal fade" id="modal-quiche" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -121,16 +119,15 @@
             <h5 class="card-title">Salade composée</h5>
             <img src="img/salade_1.png" class="card-img-top" alt="Salade composée">
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
+              <p class="card-text">Un mélange frais de légumes de saison, croûtons dorés et vinaigrette maison.</p>
               <div class="link-btn">
                 <div class="price">
-                  <button type="button" class="btn btn-secondary">5€</button>
+                  <button type="button" class="btn btn-secondary">9.50€</button>
                 </div>
                 <div class="info-cmd">
                   <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top"
-                    data-bs-title="ingrédients"><i class="fa-solid fa-circle-plus"></i>
-                    informations</button>
+                    data-bs-title="plat végan"><i class="fa-solid fa-circle-plus"></i>
+                    information</button>
                   <button type="button" class="btn btn-success" data-bs-toggle="modal"
                     data-bs-target="#modal-salade">commander</button>
                   <div class="modal fade" id="modal-salade" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -159,15 +156,14 @@
             <h5 class="card-title">Tarte épicée</h5>
             <img src="img/tarte_piquant_quiche.jpg" class="card-img-top" alt="Tarte épicée">
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
+              <p class="card-text">Une pâte croustillante garnie de légumes et d’épices aux saveurs envoûtantes.</p>
               <div class="link-btn">
                 <div class="price">
-                  <button type="button" class="btn btn-secondary">5€</button>
+                  <button type="button" class="btn btn-secondary">10€</button>
                 </div>
                 <div class="info-cmd">
                   <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top"
-                    data-bs-title="ingrédients"><i class="fa-solid fa-circle-plus"></i>
+                    data-bs-title="plat végétarien"><i class="fa-solid fa-circle-plus"></i>
                     informations</button>
                   <button type="button" class="btn btn-success" data-bs-toggle="modal"
                     data-bs-target="#modal-tarte-epice">commander</button>
@@ -199,20 +195,19 @@
 
       <!-- tab -->
       <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-        <div class="row justify-content-around">
+        <div class="row justify-content-around flex-wrap">
           <div class="card col-3">
             <h5 class="card-title">Entrecôte bordelaise</h5>
             <img src="img/entrecote-bordelaise.jpg" class="card-img-top" alt="entrecôte bordelaise">
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
+              <p class="card-text">Une pièce de bœuf fondante accompagnée d'une sauce au vin rouge et échalotes.</p>
               <div class="link-btn">
                 <div class="price">
-                  <button type="button" class="btn btn-secondary">5€</button>
+                  <button type="button" class="btn btn-secondary">16.5€</button>
                 </div>
                 <div class="info-cmd">
                   <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top"
-                    data-bs-title="ingrédients"><i class="fa-solid fa-circle-plus"></i>
+                    data-bs-title="cuisson : bleu, saignant, à point"><i class="fa-solid fa-circle-plus"></i>
                     informations</button>
                   <button type="button" class="btn btn-success" data-bs-toggle="modal"
                     data-bs-target="#modal-entrecote">commander</button>
@@ -242,15 +237,14 @@
             <h5 class="card-title">Pot-au-feu</h5>
             <img src="img/pot_au_feu.jpg" class="card-img-top" alt="Pot-au-feu">
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
+              <p class="card-text">Le grand classique français, mijoté avec amour, légumes et bouillon parfumé.</p>
               <div class="link-btn">
                 <div class="price">
-                  <button type="button" class="btn btn-secondary">5€</button>
+                  <button type="button" class="btn btn-secondary">18€</button>
                 </div>
                 <div class="info-cmd">
                   <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top"
-                    data-bs-title="ingrédients"><i class="fa-solid fa-circle-plus"></i>
+                    data-bs-title="option végétarien"><i class="fa-solid fa-circle-plus"></i>
                     informations</button>
                   <button type="button" class="btn btn-success" data-bs-toggle="modal"
                     data-bs-target="#modal-ptf">commander</button>
@@ -280,15 +274,14 @@
             <h5 class="card-title">Filet de bar</h5>
             <img src="img/filet_bar.jpeg" class="card-img-top" alt="Filet de bar">
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
+              <p class="card-text">Poêlé à la perfection, servi sur un lit de légumes croquants et beurre citronné.</p>
               <div class="link-btn">
                 <div class="price">
-                  <button type="button" class="btn btn-secondary">5€</button>
+                  <button type="button" class="btn btn-secondary">15.70€</button>
                 </div>
                 <div class="info-cmd">
                   <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top"
-                    data-bs-title="ingrédients"><i class="fa-solid fa-circle-plus"></i>
+                    data-bs-title="sauce hollandaise"><i class="fa-solid fa-circle-plus"></i>
                     informations</button>
                   <button type="button" class="btn btn-success" data-bs-toggle="modal"
                     data-bs-target="#modal-filet">commander</button>
@@ -320,20 +313,19 @@
 
       <!-- tab -->
       <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
-        <div class="row justify-content-around">
+        <div class="row justify-content-around flex-wrap">
           <div class="card col-3">
             <h5 class="card-title">Tarte tatin</h5>
             <img src="img/tarte_tatin.jpg" class="card-img-top" alt="Tarte tatin">
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
+              <p class="card-text">Bananes caramélisées fondantes sur une pâte dorée, avec une touche de crème fraîche.</p>
               <div class="link-btn">
                 <div class="price">
-                  <button type="button" class="btn btn-secondary">5€</button>
+                  <button type="button" class="btn btn-secondary">8.5€</button>
                 </div>
                 <div class="info-cmd">
                   <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top"
-                    data-bs-title="ingrédients"><i class="fa-solid fa-circle-plus"></i>
+                    data-bs-title="banane, pomme ou poire"><i class="fa-solid fa-circle-plus"></i>
                     informations</button>
                   <button type="button" class="btn btn-success" data-bs-toggle="modal"
                     data-bs-target="#modal-tatin">commander</button>
@@ -363,15 +355,14 @@
             <h5 class="card-title">Crème brûlée</h5>
             <img src="img/creme_brulee.jpg" class="card-img-top" alt="Crème brûlée">
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
+              <p class="card-text">L'incontournable à la vanille, avec sa croûte caramélisée à casser du bout de la cuillère.</p>
               <div class="link-btn">
                 <div class="price">
-                  <button type="button" class="btn btn-secondary">5€</button>
+                  <button type="button" class="btn btn-secondary">6.5€</button>
                 </div>
                 <div class="info-cmd">
                   <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top"
-                    data-bs-title="ingrédients"><i class="fa-solid fa-circle-plus"></i>
+                    data-bs-title="plat végératien"><i class="fa-solid fa-circle-plus"></i>
                     informations</button>
                   <button type="button" class="btn btn-success" data-bs-toggle="modal"
                     data-bs-target="#modal-creme">commander</button>
@@ -401,15 +392,14 @@
             <h5 class="card-title">Clafoutis</h5>
             <img src="img/clafoutis.jpg" class="card-img-top" alt="Clafoutis">
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
+              <p class="card-text">Un dessert moelleux aux fruits de saison, légèrement sucré et rustique.</p>
               <div class="link-btn">
                 <div class="price">
-                  <button type="button" class="btn btn-secondary">5€</button>
+                  <button type="button" class="btn btn-secondary">8€</button>
                 </div>
                 <div class="info-cmd">
                   <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top"
-                    data-bs-title="ingrédients"><i class="fa-solid fa-circle-plus"></i>
+                    data-bs-title="cerises, pèches, prunes"><i class="fa-solid fa-circle-plus"></i>
                     informations</button>
                   <button type="button" class="btn btn-success" data-bs-toggle="modal"
                     data-bs-target="#modal-clafoutis">commander</button>
@@ -445,19 +435,19 @@
     <div class="local">
       <div class="contact-info">
         <p>
-        <h3>Notre adresse</h3>
+        <h3><i class="cp cp-home-o"></i> Notre adresse</h3>
         15, Rue des Vignes Fleuries
         <br />
         75011 Paris, France
         </p>
         <p>
-        <h3>Nos Coordonnées</h3>
+        <h3><i class="cp cp-phone-alt-o"></i> Nos Coordonnées</h3>
         <b>01 42 78 35 90</b>
         <br />
         contact@lechariot-bistro.fr
         </p>
         <p>
-        <h3>Nos horraires</h3>
+        <h3><i class="cp cp-clock-o"></i> Nos horraires</h3>
         <b>Mardi, Jeudi, Mercredi :</b> 12h - 15h / 19h - 22h
         <br />
         <b>Vendredi :</b> 19h - 22h
